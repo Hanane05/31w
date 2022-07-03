@@ -9,19 +9,23 @@
 
 .site__header {
 	grid-area: header;
+	background-color: lighten($color__background-zonegrid, 20%);
 }
 
 .site__main {
 	grid-area: main;
 	overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+	background-color: lighten($color__background-zonegrid, 70%);
 }
 
 .site__sidebar {
 	grid-area: sidebar;
+	background-color: lighten($color__background-zonegrid, 40%);
 }
 
 .site__footer {
 	grid-area: footer;
+	background-color: lighten($color__background-zonegrid, 20%);
 }
 
 // @import "no-sidebar";

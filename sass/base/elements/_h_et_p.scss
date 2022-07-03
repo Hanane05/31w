@@ -5,9 +5,11 @@
 
 h1,h2 {
     color : lighten($color__h, 40%);
+    font-family: $font__titre;
 }
 h3,h4,h5,h6,p {
     color : lighten($color__h, 10%);
+    font-family: $font__main;
 }
 
 h1 {

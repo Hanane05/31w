@@ -386,10 +386,12 @@ body {
 */
 h1, h2 {
   color: #666666;
+  font-family: "Arima", sans-serif;
 }
 
 h3, h4, h5, h6, p {
   color: #1a1a1a;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
 h1 {
@@ -580,24 +582,28 @@ textarea {
 --------------------------------------------------------------*/
 .site {
   display: grid;
-  grid-template-columns: 25vw auto;
+  grid-template-columns: 15vw auto;
   grid-template-areas: "header header" "sidebar main" "footer footer";
 }
 
 .site__header {
   grid-area: header;
+  background-color: #05dfc9;
 }
 
 .site__main {
   grid-area: main;
   overflow: hidden;
   /* Resolves issue with <pre> elements forcing full width. */
+  background-color: #e5fefc;
 }
 
 .site__sidebar {
   grid-area: sidebar;
+  background-color: #4ffbea;
 }
 
 .site__footer {
   grid-area: footer;
+  background-color: #05dfc9;
 }/*# sourceMappingURL=style.css.map */
