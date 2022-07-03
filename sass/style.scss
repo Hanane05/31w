@@ -65,20 +65,8 @@ Text Domain: 31-w
 --------------------------------------------------------------*/
 @import "base/base";
 
-.site{
-	background-color: rgb(255, 230, 208);
-	padding: 2rem;
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+@import "layout/sidebar-content";
 
-	h2{
-		color:rgb(0, 40, 80)
-	}
-
-	a.bouton{
-		background-color: lightgrey;
-		padding: .25rem 1rem;
-
-		&:hover{
-			background-color: rgb(134, 134, 134);
-		}
-	}
-}
