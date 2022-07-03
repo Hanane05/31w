@@ -1,5 +1,5 @@
 <footer class="site__footer">
-Réalisé par Hanane Boukhalfa :)
+<h2>© 2022 Hanane Boukhalfa</h2>
 </footer>
 <?php wp_footer(); ?>
 </section> <!-- fin .site -->
