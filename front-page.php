@@ -1,7 +1,7 @@
 <?php
 get_header(); ?>
 <section class="site__main">
-<h1> front-page Mon premier modèle Wordpress</h1>
+<h1> front-page Mon modèle Wordpress pour TP1</h1>
 <?php
 if (have_posts()) :
     while (have_posts()) : the_post(); ?>
