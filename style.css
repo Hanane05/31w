@@ -551,17 +551,29 @@ textarea {
   width: 100%;
 }
 
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
 .site {
-  background-color: rgb(255, 230, 208);
-  padding: 2rem;
+  display: grid;
+  grid-template-columns: 25vw auto;
+  grid-template-areas: "header header" "sidebar main" "footer footer";
 }
-.site h2 {
-  color: rgb(0, 40, 80);
+
+.site__header {
+  grid-area: header;
 }
-.site a.bouton {
-  background-color: lightgrey;
-  padding: 0.25rem 1rem;
+
+.site__main {
+  grid-area: main;
+  overflow: hidden;
+  /* Resolves issue with <pre> elements forcing full width. */
 }
-.site a.bouton:hover {
-  background-color: rgb(134, 134, 134);
+
+.site__sidebar {
+  grid-area: sidebar;
+}
+
+.site__footer {
+  grid-area: footer;
 }/*# sourceMappingURL=style.css.map */
