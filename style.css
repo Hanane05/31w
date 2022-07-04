@@ -586,24 +586,33 @@ textarea {
   grid-template-areas: "header header" "sidebar main" "footer footer";
 }
 
+.site__header, .site__sidebar, .site__main, .site__footer {
+  padding: 1vh 3vw;
+}
+
+.site__header, .site__sidebar, .site__footer {
+  color: rgb(207, 206, 207);
+}
+
 .site__header {
   grid-area: header;
-  background-color: #05dfc9;
+  background-color: #000543;
 }
 
 .site__main {
   grid-area: main;
   overflow: hidden;
   /* Resolves issue with <pre> elements forcing full width. */
-  background-color: #e5fefc;
+  background-color: white;
 }
 
 .site__sidebar {
   grid-area: sidebar;
-  background-color: #4ffbea;
+  background-color: #000a8f;
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #05dfc9;
+  background-color: #000a8f;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

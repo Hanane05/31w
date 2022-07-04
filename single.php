@@ -1,6 +1,7 @@
 <?php
 get_header(); ?>
-<h1> single.php Mon premier modèle Wordpress</h1>
+<section class="site__main">
+<h1> single.php Mon modèle Wordpress pour Tp1</h1>
 <?php
 if (have_posts()) :
     while (have_posts()) : the_post(); ?>
@@ -19,5 +20,5 @@ if (have_posts()) :
 
     <?php endwhile; ?>
 <?php endif; ?>
-
+</section>
 <?php get_footer(); ?>

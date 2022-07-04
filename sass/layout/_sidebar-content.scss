@@ -7,25 +7,34 @@
 		"footer footer";
 }
 
+.site__header, .site__sidebar, .site__main, .site__footer{
+	padding: 1vh 3vw;
+}
+
+.site__header, .site__sidebar, .site__footer{
+	color: $color_text;
+}
 .site__header {
 	grid-area: header;
-	background-color: lighten($color__background-zonegrid, 20%);
+	background-color: lighten($color__background-zonegrid, 5%);
+	
 }
 
 .site__main {
 	grid-area: main;
 	overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
-	background-color: lighten($color__background-zonegrid, 70%);
+	background-color: lighten($color__background-zonegrid, 95%);
 }
 
 .site__sidebar {
 	grid-area: sidebar;
-	background-color: lighten($color__background-zonegrid, 40%);
+	background-color: lighten($color__background-zonegrid, 20%);
 }
 
 .site__footer {
 	grid-area: footer;
 	background-color: lighten($color__background-zonegrid, 20%);
+	text-align: center;
 }
 
 // @import "no-sidebar";
