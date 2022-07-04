@@ -582,8 +582,8 @@ textarea {
 --------------------------------------------------------------*/
 .site {
   display: grid;
-  grid-template-columns: 15vw auto;
-  grid-template-areas: "header header" "sidebar main" "footer footer";
+  grid-template-columns: auto;
+  grid-template-areas: "header header" "sidebar sidebar" "main main" "footer footer";
 }
 
 .site__header, .site__sidebar, .site__main, .site__footer {
@@ -615,4 +615,12 @@ textarea {
   grid-area: footer;
   background-color: #000a8f;
   text-align: center;
+}
+
+@media screen and (min-width: 700px) {
+  .site {
+    display: grid;
+    grid-template-columns: 15vw auto;
+    grid-template-areas: "header header" "sidebar main" "footer footer";
+  }
 }/*# sourceMappingURL=style.css.map */
