@@ -26,11 +26,13 @@
                 </h2>
             </section>
             <nav class="site__navigation">
-            Menu
+            <a href="#">Accueil</a>
+            <a href="#">À propos</a>
+            <a href="#">Galerie</a>
+            <a href="#">Contact</a>
             </nav>
         </header>
         <section class="site__sidebar">
-            <h3>Sidebar</h3>
         </section>
     
 
