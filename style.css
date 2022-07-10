@@ -601,19 +601,18 @@ textarea {
 
 .site__main {
   grid-area: main;
-  overflow: hidden;
-  /* Resolves issue with <pre> elements forcing full width. */
-  background-color: white;
+  overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+  background-color: #f5f6ff;
 }
 
 .site__sidebar {
   grid-area: sidebar;
-  background-color: #000a8f;
+  background-color: white;
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #000a8f;
+  background-color: #000543;
   text-align: center;
 }
 

@@ -24,17 +24,17 @@
 .site__main {
 	grid-area: main;
 	overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
-	background-color: lighten($color__background-zonegrid, 95%);
+	background-color: lighten($color__background-zonegrid, 90%);
 }
 
 .site__sidebar {
 	grid-area: sidebar;
-	background-color: lighten($color__background-zonegrid, 20%);
+	background-color: lighten($color__background-zonegrid, 95%);
 }
 
 .site__footer {
 	grid-area: footer;
-	background-color: lighten($color__background-zonegrid, 20%);
+	background-color: lighten($color__background-zonegrid, 5%);
 	text-align: center;
 }
 
