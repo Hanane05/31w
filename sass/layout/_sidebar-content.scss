@@ -10,10 +10,12 @@
 	@media screen and (min-width: 700px) {
 		grid-template-areas:
 		"header header"
-		"sidebar sidebar"
-		"main main"
-		"footer footer";		
-	}
+		"sidebar main"
+		"sidebar main"
+		"footer footer";
+		grid-template-columns: ($size__site-sidebar) auto;
+		}
+		
 }
 
 .site__header, .site__sidebar, .site__main, .site__footer{
@@ -27,6 +29,7 @@
 	grid-area: header;
     background-color: #dcdeff;
     position: fixed;
+	top: 0;
 	z-index: 999999;
     width: 100%;
 @media screen and (min-width: 700px) {
@@ -56,11 +59,21 @@
 	a{
 		color: initial;
 	}
+	
 }
 
 .site__sidebar {
 	grid-area: sidebar;
 	background-color: lighten($color__background-zonegrid, 95%);
+	margin-top: 10rem;
+	@media screen and (min-width: 700px) {
+		margin-top: 0;
+	}
+	
+	h3{
+		color: $color__link;
+	}
+
 }
 
 .site__footer {
@@ -72,16 +85,6 @@
 	}
 }
 
-@media screen and (min-width: 700px){
-	.site{
-		display: grid;
-		grid-template-columns: ($size__site-sidebar) auto;
-		grid-template-areas:
-			"header header"
-			"sidebar main"
-			"footer footer";
-	}
-	}
-	
+
 
 // @import "no-sidebar";

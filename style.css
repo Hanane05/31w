@@ -499,10 +499,6 @@ a:hover, a:active {
   outline: 0;
 }
 
-header a {
-  color: #cfcecf;
-}
-
 header a:visited {
   color: #2b2e2d;
 }
@@ -610,7 +606,7 @@ textarea {
 .menu__sidebar__ul {
   list-style-type: none;
   margin: 0;
-  padding: 1rem 0;
+  padding: 0;
 }
 
 .menu__sidebar__ul .menu-item {
@@ -640,7 +636,8 @@ textarea {
 
 @media screen and (min-width: 700px) {
   .site {
-    grid-template-areas: "header header" "sidebar sidebar" "main main" "footer footer";
+    grid-template-areas: "header header" "sidebar main" "sidebar main" "footer footer";
+    grid-template-columns: 300px auto;
   }
 }
 
@@ -652,6 +649,7 @@ textarea {
   grid-area: header;
   background-color: #dcdeff;
   position: fixed;
+  top: 0;
   z-index: 999999;
   width: 100%;
 }
@@ -693,6 +691,17 @@ textarea {
 .site__sidebar {
   grid-area: sidebar;
   background-color: white;
+  margin-top: 10rem;
+}
+
+@media screen and (min-width: 700px) {
+  .site__sidebar {
+    margin-top: 0;
+  }
+}
+
+.site__sidebar h3 {
+  color: #4169e1;
 }
 
 .site__footer {
@@ -703,13 +712,5 @@ textarea {
 
 .site__footer h2 {
   color: #cfcecf;
-}
-
-@media screen and (min-width: 700px) {
-  .site {
-    display: grid;
-    grid-template-columns: 25vw auto;
-    grid-template-areas: "header header" "sidebar main" "footer footer";
-  }
 }
 /*# sourceMappingURL=style.css.map */
