@@ -704,7 +704,7 @@ textarea {
 @media screen and (min-width: 700px) {
   .site__sidebar {
     margin-top: 0;
-    padding: 1rem;
+    padding: 1rem 1rem 1rem 4rem;
   }
 }
 
