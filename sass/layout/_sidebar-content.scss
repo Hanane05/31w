@@ -2,10 +2,18 @@
 	display: grid;
 	grid-template-columns: auto;
 	grid-template-areas:
+		"header"
+		"sidebar"
+		"main"
+		"footer";
+	
+	@media screen and (min-width: 700px) {
+		grid-template-areas:
 		"header header"
 		"sidebar sidebar"
 		"main main"
-		"footer footer";
+		"footer footer";		
+	}
 }
 
 .site__header, .site__sidebar, .site__main, .site__footer{
@@ -13,11 +21,11 @@
 }
 
 .site__header, .site__sidebar, .site__footer{
-	color: $color_text;
+	// color: $color_text;
 }
 .site__header {
 	grid-area: header;
-	background-color: lighten($color__background-zonegrid, 5%);
+	background-color: lighten($color__background-zonegrid, 85%);
 	
 }
 
