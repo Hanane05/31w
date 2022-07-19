@@ -20,3 +20,26 @@ a {
 		outline: 0;
 	}
 }
+
+header a {
+	color: $color__link-header;
+
+	&:visited {
+		color: $color__link-header-visited;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color__link-hover;
+	}
+
+	&:focus {
+		outline: thin dotted;
+	}
+
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
