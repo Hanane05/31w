@@ -1,0 +1,23 @@
+.menu__sidebar{
+    
+}
+
+.menu__sidebar__ul{
+   list-style-type: none;
+   margin: 0;
+   padding: 1rem 0; 
+
+}
+
+.menu__sidebar__ul .menu-item{ //li
+    margin: .5rem 0;
+}
+
+.menu__sidebar__ul .menu-item a{
+    padding: .5rem;
+    line-height: 1rem;
+}
+
+.menu__sidebar__ul .menu-item a:hover{
+    background-color: lighten($color__background-zonegrid, 80%);;
+}
