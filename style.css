@@ -665,7 +665,16 @@ textarea {
   grid-area: main;
   overflow: hidden;
   /* Resolves issue with <pre> elements forcing full width. */
-  background-color: #f5f6ff;
+}
+
+.site__main p {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  letter-spacing: .035rem;
+}
+
+.site__main h2 {
+  margin-top: 3rem;
 }
 
 .site__sidebar {

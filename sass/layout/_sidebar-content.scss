@@ -40,7 +40,14 @@
 .site__main {
 	grid-area: main;
 	overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
-	background-color: lighten($color__background-zonegrid, 90%);
+	p{
+		font-size: 1.2rem;
+		line-height: 1.6rem;
+		letter-spacing: .035rem;
+	}
+	h2{
+		margin-top: 3rem;
+	}
 }
 
 .site__sidebar {
