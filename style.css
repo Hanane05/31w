@@ -645,12 +645,20 @@ textarea {
 }
 
 .site__header, .site__sidebar, .site__main, .site__footer {
-  padding: 1vh 3vw;
+  padding: 1vh 6vw;
 }
 
 .site__header {
   grid-area: header;
   background-color: #dcdeff;
+  position: fixed;
+  width: 100%;
+}
+
+@media screen and (min-width: 700px) {
+  .site__header {
+    position: static;
+  }
 }
 
 .site__header h2 {
@@ -677,6 +685,10 @@ textarea {
   margin-top: 3rem;
 }
 
+.site__main a {
+  color: initial;
+}
+
 .site__sidebar {
   grid-area: sidebar;
   background-color: white;
@@ -686,6 +698,10 @@ textarea {
   grid-area: footer;
   background-color: #000543;
   text-align: center;
+}
+
+.site__footer h2 {
+  color: #cfcecf;
 }
 
 @media screen and (min-width: 700px) {

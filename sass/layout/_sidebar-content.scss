@@ -17,7 +17,7 @@
 }
 
 .site__header, .site__sidebar, .site__main, .site__footer{
-	padding: 1vh 3vw;
+	padding: 1vh 6vw;
 }
 
 .site__header, .site__sidebar, .site__footer{
@@ -25,8 +25,12 @@
 }
 .site__header {
 	grid-area: header;
-	background-color: lighten($color__background-zonegrid, 85%);
-
+    background-color: #dcdeff;
+    position: fixed;
+    width: 100%;
+@media screen and (min-width: 700px) {
+	position: static;
+}
 	h2{
 		color: $color__orangered;
 	}
@@ -48,6 +52,9 @@
 	h2{
 		margin-top: 3rem;
 	}
+	a{
+		color: initial;
+	}
 }
 
 .site__sidebar {
@@ -59,6 +66,9 @@
 	grid-area: footer;
 	background-color: lighten($color__background-zonegrid, 5%);
 	text-align: center;
+	h2{
+		color: $color__link-header;
+	}
 }
 
 @media screen and (min-width: 700px){
