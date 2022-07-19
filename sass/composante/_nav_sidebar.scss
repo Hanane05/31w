@@ -8,11 +8,13 @@
    padding: 1rem 0; 
    
    .menu-item{ //li
-    margin: .5rem 0;
+    margin: 1rem 0;
 
     a{
+        color: $color__text-main;
+        font-size: 1.1rem;
         padding: .5rem;
-        line-height: 1rem;
+        line-height: 1.5;
         :hover{
             background-color: lighten($color__background-zonegrid, 80%);;
         }

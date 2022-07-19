@@ -614,12 +614,14 @@ textarea {
 }
 
 .menu__sidebar__ul .menu-item {
-  margin: .5rem 0;
+  margin: 1rem 0;
 }
 
 .menu__sidebar__ul .menu-item a {
+  color: #404040;
+  font-size: 1.1rem;
   padding: .5rem;
-  line-height: 1rem;
+  line-height: 1.5;
 }
 
 .menu__sidebar__ul .menu-item a :hover {
