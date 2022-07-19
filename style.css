@@ -651,6 +651,14 @@ textarea {
   background-color: #dcdeff;
 }
 
+.site__header h2 {
+  color: orangered;
+}
+
+.site__header a {
+  text-decoration: none;
+}
+
 .site__main {
   grid-area: main;
   overflow: hidden;
