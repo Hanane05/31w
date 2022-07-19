@@ -55,6 +55,9 @@
 	}
 	h2{
 		margin-top: 3rem;
+    font-size: 1.3rem;
+    color: $color__text-main;
+    text-decoration: underline;
 	}
 	a{
 		color: initial;
@@ -68,6 +71,7 @@
 	margin-top: 10rem;
 	@media screen and (min-width: 700px) {
 		margin-top: 0;
+		padding: 1rem;
 	}
 	
 	h3{
