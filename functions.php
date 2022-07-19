@@ -23,6 +23,10 @@ function mon_31w_setup()
     add_theme_support('title-tag');
     add_theme_support('html5', array('search-form'));
     add_theme_support('custom-background');
+    register_nav_menus( array(
+        'sidebar_menu' => __( 'Sidebar Menu', 'mon_31w' ),
+        'footer_menu'  => __( 'Footer Menu', 'mon_31w' ),
+    ) );
     
 }
 
@@ -34,6 +38,3 @@ function mon_31w_enqueue() {
     wp_enqueue_style('31w-google-font', 'https://fonts.googleapis.com/css2?family=Arima&display=swap', false);
 }
 add_action( 'wp_enqueue_scripts', 'mon_31w_enqueue' );
-
-
-?>
