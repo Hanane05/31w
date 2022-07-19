@@ -24,9 +24,6 @@
                 <h1>
                     <a href="<?= esc_url(home_url('/')) ?>"><?= bloginfo('name'); ?></a>
                 </h1>
-                <h2>
-                    <?= bloginfo('description'); ?>
-                </h2>
             </section>
             <nav class="site__navigation">
                 <a href="#">Accueil</a>
