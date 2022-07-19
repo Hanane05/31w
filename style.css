@@ -652,6 +652,7 @@ textarea {
   grid-area: header;
   background-color: #dcdeff;
   position: fixed;
+  z-index: 999999;
   width: 100%;
 }
 
